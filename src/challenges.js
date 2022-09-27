@@ -29,11 +29,11 @@ function concatName(strings) {
   return `${firtsName}, ${lastName}`;
 }
 
-console.log(concatName(['Lucas', 'Cassiano', 'Ferraz', 'Paolillo']));
-
 // Desafio 5
-function footballPoints() {
-  // seu código aqui
+function footballPoints(vitorias, empates) {
+  let pontosVitorias = vitorias * 3;
+  let empatesPontos = empates * 1;
+  return pontosVitorias + empatesPontos;
 }
 
 // Desafio 6

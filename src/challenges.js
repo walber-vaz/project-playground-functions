@@ -21,12 +21,15 @@ function splitSentence(string) {
   let stringSeparate = string.split(' ');
   return stringSeparate;
 }
-console.log(splitSentence('Vamo que Vamo'));
 
 // Desafio 4
-function concatName() {
-  // seu código aqui
+function concatName(strings) {
+  let firtsName = strings[strings.length - 1];
+  let lastName = strings[0];
+  return `${firtsName}, ${lastName}`;
 }
+
+console.log(concatName(['Lucas', 'Cassiano', 'Ferraz', 'Paolillo']));
 
 // Desafio 5
 function footballPoints() {

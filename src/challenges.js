@@ -55,7 +55,7 @@ function highestCount(numbers) {
 
 // Desafio 7
 function catAndMouse() {
-  // seu código aqui
+
 }
 
 // Desafio 8
@@ -76,25 +76,37 @@ function fizzBuzz(values) {
 }
 
 // Desafio 9
-function encode() {
-  // seu código aqui
+function encode(frase) {
+  let trocarLetra = frase
+    .replace(/a/gi, 1)
+    .replace(/e/gi, 2)
+    .replace(/i/gi, 3)
+    .replace(/o/gi, 4)
+    .replace(/u/gi, 5);
+  return trocarLetra;
 }
-function decode() {
-  // seu código aqui
+function decode(frase) {
+  let trocarNumero = frase
+    .replace(/1/gi, 'a')
+    .replace(/2/gi, 'e')
+    .replace(/3/gi, 'i')
+    .replace(/4/gi, 'o')
+    .replace(/5/gi, 'u');
+  return trocarNumero;
 }
 
 // Desafio 10
 function techList(techs, nome) {
-  let lists = [];
   if (techs.length === 0) {
     return 'Vazio!';
   }
+  let lists = [];
   let techsSort = techs.sort();
   for (let index = 0; index < techs.length; index += 1) {
     lists.push({
       tech: techsSort[index],
-      name: nome
-    })
+      name: nome,
+    });
   }
   return lists;
 }
